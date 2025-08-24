@@ -1,0 +1,322 @@
+% LaTeX Curriculum Vitae
+% Author: Xovee Xu (https://xovee.cn)
+% Last Update: Feb 1, 2024
+% Latest Version (consider give me a star!): https://github.com/Xovee/latex-cv
+% Overleaf Link: https://www.overleaf.com/latex/templates/xovees-cv-template/rrsmqwhbygcf
+% Current Version: v0.96
+% LICENSE: MIT
+
+
+\documentclass{article}
+
+\usepackage{yhmath}
+\usepackage{bm}
+\usepackage{mathrsfs,esvect}
+\usepackage{tikz}
+
+
+\usepackage{verbatim}
+\usepackage{amssymb,amscd,amsfonts,amsbsy}
+\usepackage{latexsym}
+\usepackage{exscale}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{mathrsfs}
+\usepackage{xcolor} % Enables the creations of colors.
+\usepackage{esint} % For \fint symbol
+\usepackage{amssymb} % For \lesssim symbol
+\usepackage{stmaryrd}
+\usepackage{cite} 
+\usepackage{tikz}
+
+
+
+
+
+%\usepackage{ctex}
+\usepackage[utf8]{inputenc}
+\usepackage[full]{textcomp}
+\usepackage{CJKutf8}
+\usepackage{newtxtext}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+
+\usepackage{enumitem}
+\usepackage[a4paper,left=1in, right=1in, top=1.5in, bottom=1.5in]{geometry}
+\usepackage{url}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath,amssymb}
+\usepackage{eqparbox}
+\usepackage{graphicx}
+
+\definecolor{redo}{rgb}{0.75,0,0}
+\newcommand{\sqbullet}{~\vrule height 1ex width .8ex depth -.2ex}
+
+% package settings
+\usepackage[
+    pdfnewwindow=true,
+    pdfauthor={MathRoc},
+    pdftitle={Curriculum Vitae of MathRoc},
+    pdfpagemode=UseThumbs,
+]{hyperref}
+
+\pagestyle{headings}
+\markright{\textbf{}}
+
+\setlength\parindent{2em}
+
+\thispagestyle{empty}
+
+% define cv section
+\newcommand{\cvsection}[1]{\section*{\rmfamily#1}}
+\newcommand{\cvsubsection}[1]{\subsection*{\rmfamily\hspace{1.6em}#1}}
+
+% begin
+\begin{document}
+
+% name
+\begin{center}
+    \Large{
+    \rmfamily
+    \textbf{Xi Cen}}
+\end{center}
+\vspace{20pt}
+
+
+\setlength{\parskip}{1pt}
+\renewcommand{\arraystretch}{1.25}
+
+
+% Contact Information
+\noindent
+\begin{tabular}{@{}ll@{}}
+\bf{Address}& School of Science,\\
+& China University of Mining and
+Technology (Beijing),\\
+& Beijing 100083, People's Republic of China\\
+%\bf{Nationality}& Chinese
+\end{tabular}%
+\hfill
+\begin{tabular}{@{}ll@{}}
+\bf{Email}& \href{mailto:xicenmath@gmail.com}{xicenmath@gmail.com}\\
+\bf{ResearchGate}& \href{https://www.researchgate.net/profile/Xi-Cen-8?ev=prf_overview}{\color{blue}ResearchGate--Link}\\
+\bf{CV--Online}& \href{https://xicenmath.github.io/homepage/cv.pdf}
+{\color{blue} https://xicenmath.github.io/homepage/cv.pdf}
+\end{tabular}
+\vspace{2mm}
+
+\setlength{\parskip}{3pt}
+
+
+% Personal Profile
+\cvsection{Personal Profile}
+\indent
+My research interests mainly focus on Euclidean harmonic analysis, which can be divided into the following aspects:
+\begin{itemize}
+\item[(1)] The property of Multilinear Fourier integral-type operators (Fourier integral operators, pseudo-differential operators, Fourier multipliers).
+\item[(2)] Sparse bounds and sharp weighted bounds of the important operators.
+\item[(3)] Multilinear extrapolation theory and multilinear dyadic representation theory.
+\item[(4)] The singular integral operators and maximal operators along the curve.
+\item[(5)] Boundedness extended to the weighted  multi-exponent function spaces (weighted Besov spaces, weighted Triebel spaces, weighted Sobolev spaces).
+\end{itemize}
+
+
+
+% Education
+\cvsection{Education}
+\begin{tabular}{ll}
+   % \bf{2025 - Now} & Ph.D. student in Pure Math - \href{https://www.dhu.edu.cn/}{Donghua University, Shanghai} \\& Advisor: Liangjian Hu \& Min-Jie Luo\\[.5ex]
+    \bf{2025.9--now} & Master student -- {China University of Mining and Technology (Beijing)}\\
+    & Advisor: \href{https://lxy.cumtb.edu.cn/info/1067/1219.htm}{\color{blue} Prof. Xinfeng Wu}\\[.5ex]
+    \bf{2018.9--2022.6} & Bachelor of Science -- %\href{https://www.neu.edu.cn/} 
+    {Southwest University of Science and Technology}\\
+\end{tabular}
+
+
+% Skills
+%\cvsection{Skills}
+%\begin{itemize}[label=\sqbullet~]
+  %  \item Chinese (mother tongue)
+    %\item English (weak in speaking)
+   % \item Modern poetry (writing since 2014)
+%\end{itemize}
+
+
+% Contributed Talks (如果talks太多,可多次使用tabular环境,以保证不会出现大片空白)
+
+\begin{comment}
+
+\cvsection{Contributed Talks}
+\begin{tabular}{ll}
+    \bf{May 2025} & ``Asymptotics of bivariate hypergeometric functions''\\ %下引号是两个单引号
+    & Haihe Postdoctoral Forum on Mathematics, Statistics \& Interdisciplinary Sciences,\\
+    & Pure Mathematics\\
+    & \textit{Nankai University, Tianjin}\\[.5ex]
+    
+    \bf{Nov 2024} & ``Asymptotics of Saran's hypergeometric function $F_K$''\\
+    & 2024 Colloquium on Number Theory \& Special Functions\\
+    & \textit{Donghua University, Shanghai}\\[.5ex]
+    
+    \bf{Sept 2024} & ``Asymptotics of hypergeometric functions''\\
+    & 2024 Doctoral Academic Forum, \\
+    & Nonlinear Functional Analysis and Applications\\
+    & \textit{Central China Normal University, Wuhan}
+\end{tabular}
+
+
+% Awards and Honors
+\cvsection{Awards and Honors}
+\begin{tabular}{ll}
+    \bf{2024} & National Scholarship for Postgraduates, \textit{China}\\
+    & Outstanding Student, \textit{Donghua University}
+\end{tabular}
+
+
+% Collabotators
+%\cvsection{Collaborators}%不公开,仅自己看
+%\indent
+
+%Petr Blaschke, \textcolor{blue}{Bujar Fejzullahu}, \textcolor{blue}{Malte Henkel}, \textcolor{blue}{Liangjian Hu}, \textcolor{blue}{Alexey Kuznetsov}, Rahul Kumar, \textcolor{blue}{Min-Jie Luo}, Kamel Mazhouda, \textcolor{blue}{Andrew Pearce-Crump}
+
+
+% Remarkable Activities
+\cvsection{Remarkable Activities}
+\begin{itemize}[label=\sqbullet~, leftmargin=*]
+    \item I co-organised the colloquium \textit{Number Theory \& Special Functions}, which was held at Donghua University on Nov. 16th, 2024.
+\end{itemize}
+\end{comment}
+
+
+\cvsection{Professional services}	
+Referee for "Journal of Function Spaces" and "AIMS Mathematics" in 2024.
+
+
+
+% Publications
+\cvsection{Publications}	
+\begin{enumerate}[label=~~\bf{\arabic*.}~, leftmargin=*]
+\item 
+Xi Cen*,  \textbf{The multilinear Littlewood-Paley square operators and their commutators on weighted Morrey spaces},  \href{https://doi.org/10.1007/s13226-023-00406-1}{\it\textcolor{blue}{Indian J. Pure Appl. Math., 2024, 55(2): 749-775.}}
+\item Xi Cen*, 
+\textbf{Fractional maximal operators on weighted variable Lebesgue spaces over the spaces of homogeneous type}, \href{https://doi.org/10.1007/s13324-024-00955-6}{\it \textcolor{blue}{Anal.Math.Phys. 14, 94 (2024).}}\\
+\item Xi Cen*, Qianjun He, Zichen Song, Zihan Wang, 
+\textbf{New fractional type weights and the boundedness of some operators}, \href{https://doi.org/10.1007/s13324-025-01027-z}{\it \textcolor{blue}{ Anal.Math.Phys. 15, 26 (2025).}}\\ 
+\item Xi Cen*, 
+\textbf{New variable weighted conditions for fractional maximal operators over spaces of homogeneous type}, (Under Review).\\
+%\href{https://doi.org/10.1007/s13324-024-00955-6}{\it \textcolor{blue}{Anal.Math.Phys. 14, 94 (2024).}}
+\item Xi Cen*, Zichen Song,
+\textbf{The multilinear fractional sparse operator theory I: pointwise domination and weighted estimate},  (Under Review)\\
+
+\item Xi Cen*, Zichen Song,
+\textbf{The multilinear fractional bounded mean oscillation operator theory I: sparse domination, sparse $T1$ theorem, off-diagonal extrapolation, quantitative weighted estimate---for generalized commutators},  (Submitted)\\
+\item  Xi Cen*
+\textbf{Improving sparse bounds I: dilated sparse domination for multilinear pseudo-differential operators}, (Under Review)\\
+\item  Xi Cen*, 
+\textbf{Sparse bounds and sharp weighted bounds for multilinear pseudo-differential operators and their commutators I}, (Under Review)\\
+\item  Xi Cen*, 
+\textbf{Sparse bounds and sharp weighted bounds for multilinear pseudo-differential operators and their commutators II: the multi-exponent H\"ormander class}, (Submitted)\\
+\item  Xi Cen*,
+\textbf{Quantitative weighted multi-exponent improvements for pseudo-differential Operators I}, (Submitted)\\
+\item  Xi Cen*,
+\textbf{Quantitative weighted multi-exponent improvements for pseudo-differential Operators II: the Off-diagonal estimates}, (Submitted)\\
+
+
+(*--the corresponding author)
+
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+
+% Preprints
+\cvsection{Preprints}
+\begin{enumerate}[label=~~\bf{\arabic*.}~, leftmargin=*]
+\item P.-C. Hang, L. Hu. Full asymptotic expansions of the Humbert function $\Phi_1$.
+\href{https://arxiv.org/abs/2504.09280}{\color{blue}arXiv:2504.09280}
+
+\item  P.-C. Hang, M. Henkel, M.-J. Luo. Asymptotics of the Humbert functions $\Psi_1$ and $\Psi_2$. \textit{J. Approx. Theory} (under review), \href{https://arxiv.org/abs/2501.07281}{\color{blue}arXiv:2501.07281v2}
+		
+\item  P.-C. Hang, L. Hu, M.-J. Luo. Complete asymptotic expansions of the Humbert function $\Psi_1$ for two large arguments. \href{https://arxiv.org/abs/2410.21985}{\color{blue}arXiv:2410.21985v3}
+		
+\item P.-C. Hang. Matrix analogues of some asymptotic methods for Laplace integrals. \href{https://arxiv.org/abs/2404.15573}{\color{blue}arXiv:2404.15573v2}
+\end{enumerate}
+
+
+% References
+\cvsection{References}
+\noindent
+\begin{minipage}[t]{0.5\linewidth}
+\begin{tabular}{@{}ll@{}}
+\bf{Name}& Liangjian Hu\\
+\bf{Affiliation} & Donghua University\\
+\bf{Position}& Professor\\
+\bf{Contact}& \href{mailto:Ljhu@dhu.edu.cn}{Ljhu@dhu.edu.cn}
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\linewidth}
+\begin{tabular}{@{}ll@{}}
+\bf{Name}& Alexey Kuznetsov\\
+\bf{Affiliation} & York University\\
+\bf{Position}& Professor\\
+\bf{Contact}& \href{mailto:akuznets@yorku.ca}{akuznets@yorku.ca}
+\end{tabular}
+\end{minipage}
+
+\noindent
+\begin{minipage}[t]{0.5\linewidth}
+\begin{tabular}{@{}ll@{}}
+\bf{Name}& Gerg\H{o} Nemes\\
+\bf{Affiliation} & Harbin Institute of Technology\\
+\bf{Position}& Professor\\
+\bf{Contact}& \href{mailto:g.nemes@hit.edu.cn}{g.nemes@hit.edu.cn}
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\linewidth}
+\begin{tabular}{@{}ll@{}}
+\bf{Name}& Weiyuan Qiu\\
+\bf{Affiliation} & Fudan University\\
+\bf{Position}& Professor\\
+\bf{Contact}& \href{mailto:wyqiu@fudan.edu.cn}{wyqiu@fudan.edu.cn}
+\end{tabular}
+\end{minipage}
+
+\vspace{2mm}
+
+\noindent
+\begin{minipage}[t]{0.5\linewidth}
+\begin{tabular}{@{}ll@{}}
+\bf{Name}& Roderick S. C. Wong\\
+\bf{Affiliation} & City University of Hong Kong\\
+\bf{Position}& Emeritus Professor\\
+\bf{Contact}& \href{mailto:rodscwong@gmail.com}{rodscwong@gmail.com}
+\end{tabular}
+\end{minipage}
+
+\vfill
+
+\end{comment}
+
+
+
+\section*{\hfill\color{OliveGreen}\today}
+
+\end{document}
